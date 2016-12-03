@@ -1,0 +1,8 @@
+#main_Header {
+    background-color: rgb(42, 122, 167);
+    color:white;
+}
+    #main_Header h1 {
+        text-align: center;
+        margin-left: -225px;
+    }

@@ -1,0 +1,81 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Main.master.cs" Inherits="TES.Main_Site.Main" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <!-- Style Sheets
+        ===================================================================================== -->
+    <asp:ContentPlaceHolder ID="cphHead" runat="server">
+    </asp:ContentPlaceHolder>
+    <!-- Bootstrap Core CSS -->
+    <link href="../Content/css/bootstrap.css" rel="stylesheet" />
+    <!-- jquery design -->
+    <link href="../Content/css/jquery-ui.css" rel="stylesheet" />
+    <!-- MetisMenu CSS -->
+    <link href="../Content/css/metisMenu.min.css" type="text/css" rel="stylesheet" />
+    <!-- Custom CSS -->
+    <link href="../Content/css/sb-admin-2.css" type="text/css" rel="stylesheet" />
+    <!-- Custom Fonts -->
+    <link href="../Content/font/font-awesome/css/font-awesome.min.css" type="text/css" rel="stylesheet" />
+    <link href="../Content/css/Custom.css" rel="stylesheet" />
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+    <form id="form1" runat="server" data-toggle="validator" role="form">
+        <!-- Header
+        ===================================================================================== -->
+        <header id="main_Header">
+            <div class="container">
+                <br />
+                <div class="row">
+                    <div class="col-md-2">
+                        <img src="../Content/img/COMSATS.png" />
+                    </div>
+                    <div class="col-md-10" style="padding:25px 0px 0px 0px;">
+                        <h1>Thesis Evaluation System</h1>
+                    </div>
+                </div>
+                <hr />
+            </div>
+        </header>
+        <!-- Body
+        ===================================================================================== -->
+        <div>
+            <asp:ContentPlaceHolder ID="cphBody" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <!-- Footer
+        ===================================================================================== -->
+        <footer>
+            <div class="container">
+                <p style="text-align:center;color:gray;">All Rights reserved by &copy; TES 2016</p>
+            </div>
+        </footer>
+    </form>
+    <!-- Scripts
+        ===================================================================================== -->
+    <!-- jQuery -->
+    <script src="Script/jquery.js" type="text/javascript"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="Script/bootstrap.js" type="text/javascript"></script>
+    <!-- Validation -->
+    <script src="Script/validator.js" type="text/javascript"></script>
+    <!-- Metis Menu Plugin JavaScript -->
+    <script src="Script/metisMenu.min.js" type="text/javascript"></script>
+    <!-- Custom Theme JavaScript -->
+    <script src="Script/sb-admin-2.js" type="text/javascript"></script>
+       <!--Response Panels-->
+    <script type="text/javascript">
+        //Fade out responses after 5 sec
+        $(document).ready(function () {$('.response').fadeOut(5000);});
+    </script>
+</body>
+</html>

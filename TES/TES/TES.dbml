@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="TES" Class="TESDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=OLLOSTUDIO;Initial Catalog=TES;Integrated Security=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="TESConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Admin_Information" Member="Admin_Informations">
+    <Type Name="Admin_Information">
+      <Column Name="admin_id" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="user_id" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Association Name="Admin_Information_Scheduler" Member="Schedulers" ThisKey="admin_id" OtherKey="admin_id" Type="Scheduler" />
+      <Association Name="Admin_Information_Thesi" Member="Thesis" ThisKey="admin_id" OtherKey="admin_id" Type="Thesi" />
+      <Association Name="User_Information_Admin_Information" Member="User_Information" ThisKey="user_id" OtherKey="user_id" Type="User_Information" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Event_Date" Member="Event_Dates">
+    <Type Name="Event_Date">
+      <Column Name="event_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="event_date0" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="event_date1" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="event_date2" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="event_date3" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="event_date4" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="event_date5" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="event_date6" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="event_date7" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="event_date8" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="fall_date" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="header_date" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="spring_date" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.GTC_Review" Member="GTC_Reviews">
+    <Type Name="GTC_Review">
+      <Column Name="thesis_id" Type="System.Int64" DbType="BigInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="gtc_id" Type="System.Int64" DbType="BigInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="gtc_review" Member="gtc_review1" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Association Name="Supervisor_Information_GTC_Review" Member="Supervisor_Information" ThisKey="gtc_id" OtherKey="supervisor_id" Type="Supervisor_Information" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+      <Association Name="Thesi_GTC_Review" Member="Thesi" ThisKey="thesis_id" OtherKey="thesis_id" Type="Thesi" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Meeting" Member="Meetings">
+    <Type Name="Meeting">
+      <Column Name="meeting_id" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="meeting_min" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="meeting_time" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="supervisor_id" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="student_id" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Association Name="Student_Information_Meeting" Member="Student_Information" ThisKey="student_id" OtherKey="student_id" Type="Student_Information" IsForeignKey="true" />
+      <Association Name="Supervisor_Information_Meeting" Member="Supervisor_Information" ThisKey="supervisor_id" OtherKey="supervisor_id" Type="Supervisor_Information" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Presentation_Schedule" Member="Presentation_Schedules">
+    <Type Name="Presentation_Schedule">
+      <Column Name="presentation_schedule_Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="date_time" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="thesis_id" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Association Name="Thesi_Presentation_Schedule" Member="Thesi" ThisKey="thesis_id" OtherKey="thesis_id" Type="Thesi" IsForeignKey="true" DeleteRule="SET NULL" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Scheduler" Member="Schedulers">
+    <Type Name="Scheduler">
+      <Column Name="schedule_id" Type="System.Int64" DbType="BigInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="schedule_date" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="schedule_room" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="schedule_name" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="supervisor_id" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="student_id" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="admin_id" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Association Name="Scheduler_Supervisor_Schedule" Member="Supervisor_Schedules" ThisKey="schedule_id" OtherKey="schedule_id" Type="Supervisor_Schedule" />
+      <Association Name="Admin_Information_Scheduler" Member="Admin_Information" ThisKey="admin_id" OtherKey="admin_id" Type="Admin_Information" IsForeignKey="true" />
+      <Association Name="Supervisor_Information_Scheduler" Member="Supervisor_Information" ThisKey="supervisor_id" OtherKey="supervisor_id" Type="Supervisor_Information" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Student_Information" Member="Student_Informations">
+    <Type Name="Student_Information">
+      <Column Name="student_id" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="student_reg_no" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="student_smester" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="user_id" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Association Name="Student_Information_Meeting" Member="Meetings" ThisKey="student_id" OtherKey="student_id" Type="Meeting" />
+      <Association Name="User_Information_Student_Information" Member="User_Information" ThisKey="user_id" OtherKey="user_id" Type="User_Information" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Student_Schedule" Member="Student_Schedules">
+    <Type Name="Student_Schedule">
+      <Column Name="student_schedule_id" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="supervisor_id" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="student_id" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Association Name="Supervisor_Information_Student_Schedule" Member="Supervisor_Information" ThisKey="supervisor_id" OtherKey="supervisor_id" Type="Supervisor_Information" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Student_Supervisor" Member="Student_Supervisors">
+    <Type Name="Student_Supervisor">
+      <Column Name="student_supervisor_id" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="supervisor_id" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="student_id" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="supervise" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Association Name="Supervisor_Information_Student_Supervisor" Member="Supervisor_Information" ThisKey="supervisor_id" OtherKey="supervisor_id" Type="Supervisor_Information" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Student_Thesis_Supervisor" Member="Student_Thesis_Supervisors">
+    <Type Name="Student_Thesis_Supervisor">
+      <Column Name="thesis_supervisor_id" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="thesis_id" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="student_id" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="supervisor_id" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Association Name="Supervisor_Information_Student_Thesis_Supervisor" Member="Supervisor_Information" ThisKey="supervisor_id" OtherKey="supervisor_id" Type="Supervisor_Information" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Supervisor_Information" Member="Supervisor_Informations">
+    <Type Name="Supervisor_Information">
+      <Column Name="supervisor_id" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="supervisor_gtc_member" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="supervisor_job_title" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="user_id" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Association Name="Supervisor_Information_GTC_Review" Member="GTC_Reviews" ThisKey="supervisor_id" OtherKey="gtc_id" Type="GTC_Review" />
+      <Association Name="Supervisor_Information_Meeting" Member="Meetings" ThisKey="supervisor_id" OtherKey="supervisor_id" Type="Meeting" />
+      <Association Name="Supervisor_Information_Scheduler" Member="Schedulers" ThisKey="supervisor_id" OtherKey="supervisor_id" Type="Scheduler" />
+      <Association Name="Supervisor_Information_Student_Schedule" Member="Student_Schedules" ThisKey="supervisor_id" OtherKey="supervisor_id" Type="Student_Schedule" />
+      <Association Name="Supervisor_Information_Student_Supervisor" Member="Student_Supervisors" ThisKey="supervisor_id" OtherKey="supervisor_id" Type="Student_Supervisor" />
+      <Association Name="Supervisor_Information_Student_Thesis_Supervisor" Member="Student_Thesis_Supervisors" ThisKey="supervisor_id" OtherKey="supervisor_id" Type="Student_Thesis_Supervisor" />
+      <Association Name="Supervisor_Information_Supervisor_Schedule" Member="Supervisor_Schedules" ThisKey="supervisor_id" OtherKey="supervisor_id" Type="Supervisor_Schedule" />
+      <Association Name="Supervisor_Information_Thesi" Member="Thesis" ThisKey="supervisor_id" OtherKey="supervisor_id" Type="Thesi" />
+      <Association Name="User_Information_Supervisor_Information" Member="User_Information" ThisKey="user_id" OtherKey="user_id" Type="User_Information" IsForeignKey="true" DeleteRule="SET NULL" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Supervisor_Schedule" Member="Supervisor_Schedules">
+    <Type Name="Supervisor_Schedule">
+      <Column Name="supervisor_schedule_id" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="schedule_id" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="supervisor_id" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Association Name="Scheduler_Supervisor_Schedule" Member="Scheduler" ThisKey="schedule_id" OtherKey="schedule_id" Type="Scheduler" IsForeignKey="true" />
+      <Association Name="Supervisor_Information_Supervisor_Schedule" Member="Supervisor_Information" ThisKey="supervisor_id" OtherKey="supervisor_id" Type="Supervisor_Information" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Thesis" Member="Thesis">
+    <Type Name="Thesi">
+      <Column Name="thesis_id" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="thesis_title" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="thesis_domain" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="thesis_discription" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="thesis_status" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="student_id" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="supervisor_id" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="cosupervisor_id" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="admin_id" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Association Name="Thesi_GTC_Review" Member="GTC_Reviews" ThisKey="thesis_id" OtherKey="thesis_id" Type="GTC_Review" />
+      <Association Name="Thesi_Presentation_Schedule" Member="Presentation_Schedules" ThisKey="thesis_id" OtherKey="thesis_id" Type="Presentation_Schedule" />
+      <Association Name="Admin_Information_Thesi" Member="Admin_Information" ThisKey="admin_id" OtherKey="admin_id" Type="Admin_Information" IsForeignKey="true" />
+      <Association Name="Supervisor_Information_Thesi" Member="Supervisor_Information" ThisKey="supervisor_id" OtherKey="supervisor_id" Type="Supervisor_Information" IsForeignKey="true" DeleteRule="SET NULL" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Thesis_Files" Member="Thesis_Files">
+    <Type Name="Thesis_File">
+      <Column Name="file_Id" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="thesis_id" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="file_path" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="file_name" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="review" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="gtc_review" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.User_Information" Member="User_Informations">
+    <Type Name="User_Information">
+      <Column Name="user_id" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="full_name" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="user_name" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="user_email" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="user_password" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="user_contact_no" Type="System.String" DbType="VarChar(18)" CanBeNull="true" />
+      <Column Name="user_gender" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="user_cnic_no" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="password_recovery" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Association Name="User_Information_Admin_Information" Member="Admin_Informations" ThisKey="user_id" OtherKey="user_id" Type="Admin_Information" />
+      <Association Name="User_Information_Student_Information" Member="Student_Informations" ThisKey="user_id" OtherKey="user_id" Type="Student_Information" />
+      <Association Name="User_Information_Supervisor_Information" Member="Supervisor_Informations" ThisKey="user_id" OtherKey="user_id" Type="Supervisor_Information" />
+    </Type>
+  </Table>
+</Database>

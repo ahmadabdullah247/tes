@@ -1,0 +1,215 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 14.25, 15" name="TES">
+  <DataContextMoniker Name="/TESDataContext" />
+  <nestedChildShapes>
+    <classShape Id="b79aaf4b-3c08-44de-8b7c-fa264d6d0f0c" absoluteBounds="3.5, 4.375, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/TESDataContext/Admin_Information" />
+      <nestedChildShapes>
+        <elementListCompartment Id="83493928-adb1-48af-8faa-835f9e9cb2f0" absoluteBounds="3.515, 4.835, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="2c4d6469-0697-4f78-a6b0-745168fae6ca" absoluteBounds="6.75, 0.75, 2, 3.3093082682291666">
+      <DataClassMoniker Name="/TESDataContext/Event_Date" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ea651c58-4441-41a7-bb13-04989e5155a0" absoluteBounds="6.765, 1.21, 1.9700000000000002, 2.7493082682291665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="8a00516c-82ab-4a07-9e0c-e61aaf4bb1ec" absoluteBounds="12, 12, 2, 1.3862939453124987">
+      <DataClassMoniker Name="/TESDataContext/GTC_Review" />
+      <nestedChildShapes>
+        <elementListCompartment Id="99fa918f-fda7-4902-b7df-8b9dfc39ae77" absoluteBounds="12.015, 12.46, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e87cf0a0-87cd-4007-bc01-2cba7ffa0213" absoluteBounds="9.25, 10.5, 2, 1.7708968098958344">
+      <DataClassMoniker Name="/TESDataContext/Meeting" />
+      <nestedChildShapes>
+        <elementListCompartment Id="046e2bf0-0e3e-47af-ba27-7ad36d0c2d6d" absoluteBounds="9.265, 10.96, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="921b87f4-52f1-47c1-8caa-177ef3877577" absoluteBounds="12, 9.75, 2, 1.3862939453124987">
+      <DataClassMoniker Name="/TESDataContext/Presentation_Schedule" />
+      <nestedChildShapes>
+        <elementListCompartment Id="34eb1b56-45cb-4305-be12-b4de5cd6d0a9" absoluteBounds="12.015, 10.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="4db6698d-0505-4c95-be46-7d466ee1844b" absoluteBounds="6.25, 5.25, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/TESDataContext/Scheduler" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ea8aaede-2ccf-4be5-805f-4f265f554e93" absoluteBounds="6.265, 5.71, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="7b98a877-2cce-4533-8e7d-24383a83db1b" absoluteBounds="3.5, 6.25, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/TESDataContext/Student_Information" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f577f665-f5d1-4d01-818e-3861591504db" absoluteBounds="3.515, 6.71, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f3925e58-fa60-4c78-a90e-eb11ff855fc8" absoluteBounds="6.25, 8.625, 2, 1.3862939453124987">
+      <DataClassMoniker Name="/TESDataContext/Student_Schedule" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8f65690b-60a7-4614-a22c-b56860e0e593" absoluteBounds="6.265, 9.085, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="5d793eea-a038-4f87-9c9d-fd5f80a81c1d" absoluteBounds="6.25, 10.75, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/TESDataContext/Student_Supervisor" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6c671fb6-3615-4263-9ce4-9935581b2010" absoluteBounds="6.265, 11.21, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="bdd42dfe-7947-4c71-b229-75051a3ec0c5" absoluteBounds="6.25, 13.125, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/TESDataContext/Student_Thesis_Supervisor" />
+      <nestedChildShapes>
+        <elementListCompartment Id="02892201-0dcb-4f45-9284-6b48df5682f1" absoluteBounds="6.265, 13.585, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="5652910f-2945-40e2-b874-a28df086b0a0" absoluteBounds="3.5, 10.875, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/TESDataContext/Supervisor_Information" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f4075a1a-87c2-477b-b9cf-2a6ccb52bde4" absoluteBounds="3.515, 11.335, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b78008ea-6057-4f35-b164-2be2cdec7114" absoluteBounds="12, 7.125, 2, 1.3862939453124996">
+      <DataClassMoniker Name="/TESDataContext/Supervisor_Schedule" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1bfdf71f-12ea-42eb-9d82-160dc993f8b2" absoluteBounds="12.015, 7.585, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ecb98e49-1ebc-46ce-b9a7-7b4ab3e6c48f" absoluteBounds="9.25, 7.125, 2, 2.5401025390624996">
+      <DataClassMoniker Name="/TESDataContext/Thesi" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a7155fa6-5c24-46ad-bcbf-a18004435954" absoluteBounds="9.265, 7.585, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a7afe72a-43d3-49c6-88d8-210db4c14275" absoluteBounds="0.75, 0.75, 2, 1.9631982421875">
+      <DataClassMoniker Name="/TESDataContext/Thesis_File" />
+      <nestedChildShapes>
+        <elementListCompartment Id="925795d5-6d94-4cfa-9cc5-778be5e27dab" absoluteBounds="0.765, 1.21, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="99339378-843e-4844-8a1e-521455dfedb7" absoluteBounds="0.75, 8.25, 2, 2.5401025390624987">
+      <DataClassMoniker Name="/TESDataContext/User_Information" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b03358d5-9e8d-4ed8-b647-75fe7f9ac6f3" absoluteBounds="0.765, 8.71, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(5.5 : 4.8124995); (7.25 : 4.8124995); (7.25 : 5.25)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/TESDataContext/Admin_Information/Admin_Information_Scheduler" />
+      <nodes>
+        <classShapeMoniker Id="b79aaf4b-3c08-44de-8b7c-fa264d6d0f0c" />
+        <classShapeMoniker Id="4db6698d-0505-4c95-be46-7d466ee1844b" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 7.82859537760417); (5.875 : 8.20359537760417); (8.875 : 8.20359537760417); (8.875 : 10.125); (9.25 : 10.5)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/TESDataContext/Student_Information/Student_Information_Meeting" />
+      <nodes>
+        <classShapeMoniker Id="7b98a877-2cce-4533-8e7d-24383a83db1b" />
+        <classShapeMoniker Id="e87cf0a0-87cd-4007-bc01-2cba7ffa0213" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 12.4223453776042); (11.6041666666667 : 12.4223453776042 : JumpStart); (11.7708333333333 : 12.4223453776042 : JumpEnd); (12 : 12.4223453776042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/TESDataContext/Supervisor_Information/Supervisor_Information_GTC_Review" />
+      <nodes>
+        <classShapeMoniker Id="5652910f-2945-40e2-b874-a28df086b0a0" />
+        <classShapeMoniker Id="8a00516c-82ab-4a07-9e0c-e61aaf4bb1ec" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(4.5 : 10.875); (4.5 : 10.6250025); (5.11978791666667 : 10.6250025 : JumpStart); (5.28645458333333 : 10.6250025 : JumpEnd); (5.66666416666667 : 10.6250025 : JumpStart); (5.83333083333333 : 10.6250025 : JumpEnd); (5.91666666666667 : 10.6250025 : JumpStart); (6.20833333333333 : 10.6250025 : JumpEnd); (9.25 : 10.6250025)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/TESDataContext/Supervisor_Information/Supervisor_Information_Meeting" />
+      <nodes>
+        <classShapeMoniker Id="5652910f-2945-40e2-b874-a28df086b0a0" />
+        <classShapeMoniker Id="e87cf0a0-87cd-4007-bc01-2cba7ffa0213" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 10.875); (5.875 : 10.5); (5.875 : 6.32774983723958); (6.25 : 6.32774983723958)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/TESDataContext/Supervisor_Information/Supervisor_Information_Scheduler" />
+      <nodes>
+        <classShapeMoniker Id="5652910f-2945-40e2-b874-a28df086b0a0" />
+        <classShapeMoniker Id="4db6698d-0505-4c95-be46-7d466ee1844b" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(3.9687475 : 10.875); (3.9687475 : 9.31814697265625); (4.88541416666667 : 9.31814697265625 : JumpStart); (5.05208083333333 : 9.31814697265625 : JumpEnd); (5.11978791666667 : 9.31814697265625 : JumpStart); (5.28645458333333 : 9.31814697265625 : JumpEnd); (5.79166666666667 : 9.31814697265625 : JumpStart); (5.95833333333333 : 9.31814697265625 : JumpEnd); (6.25 : 9.31814697265625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/TESDataContext/Supervisor_Information/Supervisor_Information_Student_Schedule" />
+      <nodes>
+        <classShapeMoniker Id="5652910f-2945-40e2-b874-a28df086b0a0" />
+        <classShapeMoniker Id="f3925e58-fa60-4c78-a90e-eb11ff855fc8" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 11.6330501888021); (5.91666666666667 : 11.6330501888021 : JumpStart); (6.08333333333333 : 11.6330501888021 : JumpEnd); (6.25 : 11.6330501888021)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/TESDataContext/Supervisor_Information/Supervisor_Information_Student_Supervisor" />
+      <nodes>
+        <classShapeMoniker Id="5652910f-2945-40e2-b874-a28df086b0a0" />
+        <classShapeMoniker Id="5d793eea-a038-4f87-9c9d-fd5f80a81c1d" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(4.5 : 12.4535953776042); (4.5 : 13.9142976888021); (6.25 : 13.9142976888021)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/TESDataContext/Supervisor_Information/Supervisor_Information_Student_Thesis_Supervisor" />
+      <nodes>
+        <classShapeMoniker Id="5652910f-2945-40e2-b874-a28df086b0a0" />
+        <classShapeMoniker Id="bdd42dfe-7947-4c71-b229-75051a3ec0c5" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.25 : 6.1874995); (10.1666666666667 : 6.1874995 : JumpStart); (10.3333333333333 : 6.1874995 : JumpEnd); (13 : 6.1874995); (13 : 7.125)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/TESDataContext/Scheduler/Scheduler_Supervisor_Schedule" />
+      <nodes>
+        <classShapeMoniker Id="4db6698d-0505-4c95-be46-7d466ee1844b" />
+        <classShapeMoniker Id="b78008ea-6057-4f35-b164-2be2cdec7114" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 12.0276977832031); (6 : 12.0276977832031); (6 : 10.25); (8.91666666666667 : 10.25 : JumpStart); (9.08333333333333 : 10.25 : JumpEnd); (10.1666666666667 : 10.25 : JumpStart); (10.3333333333333 : 10.25 : JumpEnd); (11.75 : 10.25); (11.75 : 9.5); (13 : 9.5); (13 : 8.5112939453125)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/TESDataContext/Supervisor_Information/Supervisor_Information_Supervisor_Schedule" />
+      <nodes>
+        <classShapeMoniker Id="5652910f-2945-40e2-b874-a28df086b0a0" />
+        <classShapeMoniker Id="b78008ea-6057-4f35-b164-2be2cdec7114" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11.25 : 9.63587076983173); (11.6875 : 10.0733707698317); (11.6875 : 12.9355716614583); (12 : 12.9355716614583)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/TESDataContext/Thesi/Thesi_GTC_Review" />
+      <nodes>
+        <classShapeMoniker Id="ecb98e49-1ebc-46ce-b9a7-7b4ab3e6c48f" />
+        <classShapeMoniker Id="8a00516c-82ab-4a07-9e0c-e61aaf4bb1ec" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11.25 : 9.63125538521635); (11.5 : 9.88125538521635); (11.5 : 9.25); (12 : 9.75)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/TESDataContext/Thesi/Thesi_Presentation_Schedule" />
+      <nodes>
+        <classShapeMoniker Id="ecb98e49-1ebc-46ce-b9a7-7b4ab3e6c48f" />
+        <classShapeMoniker Id="921b87f4-52f1-47c1-8caa-177ef3877577" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 4.56249725); (10.25 : 4.56249725); (10.25 : 7.125)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/TESDataContext/Admin_Information/Admin_Information_Thesi" />
+      <nodes>
+        <classShapeMoniker Id="b79aaf4b-3c08-44de-8b7c-fa264d6d0f0c" />
+        <classShapeMoniker Id="ecb98e49-1ebc-46ce-b9a7-7b4ab3e6c48f" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 11.254025094401); (5.91666666666667 : 11.254025094401 : JumpStart); (6.08333333333333 : 11.254025094401 : JumpEnd); (6.125 : 11.254025094401); (6.125 : 10.375); (9.04166666666667 : 10.375 : JumpStart); (9.20833333333333 : 10.375 : JumpEnd); (10.25 : 10.375); (10.25 : 9.6651025390625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/TESDataContext/Supervisor_Information/Supervisor_Information_Thesi" />
+      <nodes>
+        <classShapeMoniker Id="5652910f-2945-40e2-b874-a28df086b0a0" />
+        <classShapeMoniker Id="ecb98e49-1ebc-46ce-b9a7-7b4ab3e6c48f" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(1.75 : 8.25); (1.75 : 4.97199625651042); (3.5 : 4.97199625651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/TESDataContext/User_Information/User_Information_Admin_Information" />
+      <nodes>
+        <classShapeMoniker Id="99339378-843e-4844-8a1e-521455dfedb7" />
+        <classShapeMoniker Id="b79aaf4b-3c08-44de-8b7c-fa264d6d0f0c" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 9.97157473632813); (3.88541416666667 : 9.97157473632813 : JumpStart); (4.05208083333333 : 9.97157473632813 : JumpEnd); (4.9687475 : 9.97157473632813); (4.9687475 : 7.82859537760417)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/TESDataContext/User_Information/User_Information_Student_Information" />
+      <nodes>
+        <classShapeMoniker Id="99339378-843e-4844-8a1e-521455dfedb7" />
+        <classShapeMoniker Id="7b98a877-2cce-4533-8e7d-24383a83db1b" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 8.78407348632813); (4.88541416666667 : 8.78407348632813 : JumpStart); (5.05208083333333 : 8.78407348632813 : JumpEnd); (5.20312125 : 8.78407348632813); (5.20312125 : 10.875)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/TESDataContext/User_Information/User_Information_Supervisor_Information" />
+      <nodes>
+        <classShapeMoniker Id="99339378-843e-4844-8a1e-521455dfedb7" />
+        <classShapeMoniker Id="5652910f-2945-40e2-b874-a28df086b0a0" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
